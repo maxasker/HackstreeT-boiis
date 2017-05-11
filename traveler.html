@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html>
+
+    <head>
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <meta charset="utf-8">
+        <title>Traveler's app</title>
+        <link href="https://fonts.googleapis.com/css?family=Lobster" rel="stylesheet">
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+        <link rel="stylesheet" href="trav.css">
+        <script src="script.js"></script>
+    </head>
+    <body>
+        <nav class="navbar navbar-inverse">
+  <div class="container-fluid">
+    <div class="navbar-header">
+      <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span> 
+      </button>
+      <a class="navbar-brand" href="traveler.html">Traveler</a>
+    </div>
+    <div class="collapse navbar-collapse" id="myNavbar">
+      <ul class="nav navbar-nav">
+        <li><a href="traveler.html">Scan</a></li>
+        <li><a href="#">New route</a></li>
+        <li><a href="eatdrink.html">Eat&Drink</a></li> 
+        <li><a href="#">Sightseeing</a></li> 
+      </ul>
+      <ul class="nav navbar-nav navbar-right">
+        <li><a href="#"><span class="glyphicon glyphicon-user"></span> Register</a></li>
+        <li><a href="#"><span class="glyphicon glyphicon-log-in"></span> Login</a></li>
+      </ul>
+    </div>
+  </div>
+</nav>
+        <div align="center">
+            <div id="buttondiv" class="container">
+                <button class="pulse-button"><p id="scantext">Scanning...</p></button>
+                <button class="pulse-button-done"><p id="scantext-done">Done!</p></button>
+            </div>
+        </div>
+        <div id="traininfo" class="row">
+            <div class="col-sm-12">
+                <h2 id="heading">Information</h2>
+                <h4 class="subheading">Train ID: </h4>
+                <p class="subtext">21543-JX</p>
+                <h4 class="subheading">Destination: </h4>
+                <p class="subtext">London C</p>
+                <h4 class="subheading">ETA: </h4>
+                <p class="subtext">16:43</p>
+                <hr>
+        <div id ="trainstops" class="col-xs-12">
+            <h4 id="stops" class="subheading">Stops</h4>
+                <ul id="stoplist">
+                  <li id="firstone" class="stop">1</li>
+                  <li class="stop">2</li>
+                  <li class="stop">3</li>
+                  <li class=" active stop">4</li>
+                  <li class="stop">5</li>
+                  <li class="stop">6</li>
+                  <li class="stop">7</li>
+                </ul>
+                    <p class="stopname">Victoria</p>
+                    <p class="stopname">Edgware</p>
+                    <p class="stopname">Westmin.</p>
+                    <p class="stopname">Barbican</p>
+                    <p class="stopname">Gloucester</p>
+                    <p class="stopname">Morden</p>
+                    <p class="stopname">London C</p>
+            
+            <h3 id="arrival">Next Station: </h3>
+            <p class="subtext">Gloucester</p>
+            <p class="subtext">7 min</p>
+            </div>
+        </div>
+        </div>
+        
+    </body>
+</html>

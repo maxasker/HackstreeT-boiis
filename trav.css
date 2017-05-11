@@ -1,0 +1,196 @@
+/*Navigation*/
+.navbar {
+    background-color: crimson;
+    border: none;
+}
+
+.navbar-inverse .navbar-nav>li>a {
+    color: white;
+}
+
+.navbar-inverse .navbar-brand {
+    color: white;
+}
+
+.navbar-inverse .navbar-toggle {
+    border: none;
+}
+
+.navbar-inverse .navbar-toggle:hover {
+    background-color: indianred;
+}
+
+.navbar-inverse .navbar-toggle:focus {
+    background-color: indianred;
+}
+
+/*Scan button*/
+
+.container {
+  width: 200px;
+  height: 100%;
+  margin: 0 auto 0;
+}
+
+.pulse-button {
+  
+  margin-top: 100%;
+  position: relative;
+  width: 200px;
+  height: 200px;
+  border: none;
+  box-shadow: 0 0 0 0 rgba(232, 76, 61, 0.7);
+  border-radius: 50%;
+  background-color: lightgray;
+  background-size:cover;
+  background-repeat: no-repeat;
+  cursor: pointer;
+  -webkit-animation: pulse 1.25s infinite cubic-bezier(0.66, 0, 0, 1);
+  -moz-animation: pulse 1.25s infinite cubic-bezier(0.66, 0, 0, 1);
+  -ms-animation: pulse 1.25s infinite cubic-bezier(0.66, 0, 0, 1);
+  animation: pulse 1.25s infinite cubic-bezier(0.66, 0, 0, 1);
+}
+.pulse-button:hover 
+{
+  -webkit-animation: none;-moz-animation: none;-ms-animation: none;animation: none;
+}
+
+@-webkit-keyframes pulse {to {box-shadow: 0 0 0 45px rgba(232, 76, 61, 0);}}
+@-moz-keyframes pulse {to {box-shadow: 0 0 0 45px rgba(232, 76, 61, 0);}}
+@-ms-keyframes pulse {to {box-shadow: 0 0 0 45px rgba(232, 76, 61, 0);}}
+@keyframes pulse {to {box-shadow: 0 0 0 45px rgba(232, 76, 61, 0);}}
+
+#scantext {
+    font-family: 'Lobster', cursive;
+    color: white;
+    font-size: 30px;
+}
+
+.pulse-button-done {
+  display: none;
+  margin-top: 100%;
+  position: relative;
+  width: 200px;
+  height: 200px;
+  border: none;
+  box-shadow: 0 0 0 0 rgba(232, 76, 61, 0.7);
+  border-radius: 50%;
+  background-color: limegreen;
+  background-size:cover;
+  background-repeat: no-repeat;
+  cursor: pointer;
+    
+}
+
+#scantext-done {
+    font-family: 'Lobster', cursive;
+    color: white;
+    font-size: 30px;
+}
+
+#traininfo {
+    margin-left: 5%;
+}
+
+#heading {
+    font-family: 'Lobster', cursive;
+    margin-bottom: 3%;
+}
+
+.subheading {
+    font-weight: bold;
+}
+
+.subtext {
+    display: inline-block;
+}
+
+#dotted {
+    
+    border-radius: 50%;
+    border-top:10px dotted #f00;
+    color:#fff;
+    background-color:#fff;
+    height:1px;
+    width:80%;
+}
+
+/*Train*/
+#traininfo {
+    display: none;
+}
+
+#arrival {
+    font-weight: bold;
+}
+.stopname {
+    display: inline-block;
+    font-size: 77%;
+    font-weight: bold;
+    margin-right: 1%;
+}
+
+#firstone {
+    margin-left: 0;
+}
+
+#trainstops {
+    padding-left: 0;
+}
+
+#stops {
+    margin-bottom: 3%;
+}
+
+#stoplist {
+    padding: 0;
+}
+
+.stop {
+  width: 2em;
+  height: 2em;
+  text-align: center;
+  line-height: 2em;
+  border-radius: 1em;
+  background: crimson;
+  margin: 0 1em;
+  display: inline-block;
+  color: white;
+  position: relative;
+}
+
+.stop:before {
+  content: '';
+  position: absolute;
+  top: .9em;
+  left: -3em;
+  width: 3em;
+  height: .2em;
+  background: crimson;
+  z-index: -1;
+}
+
+
+.stop:first-child::before {
+  display: none;
+}
+
+.active {
+  background: crimson;
+}
+
+.active ~ .stop {
+  background: lightgray;
+}
+
+.active ~ .stop:before {
+  background: lightgray;
+}
+
+/*Eat&Drink Map*/
+#map {
+    margin-left: 12%;
+    height: 800px;
+    width: 583px;
+    background-image: url("restaurants.PNG");
+}
