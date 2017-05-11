@@ -1,0 +1,172 @@
+.right{
+    position:absolute;
+    margin-top:360px;
+    margin-left:20px;
+    color:black;
+}
+
+.left{
+    position: absolute;
+    margin-top:360px;
+    margin-left:670px;
+    color:black;
+}
+
+._9{
+    color:crimson;
+    position: absolute;
+    margin-left:350px;
+    margin-top:100px;
+}
+
+._8{
+    color:crimson;
+    position: absolute;
+    margin-left:350px;
+    margin-top:200px;
+}
+
+._7{
+    color:crimson;
+    position: absolute;
+    margin-left:350px;
+    margin-top:300px;
+}
+
+._6{
+    color:crimson;
+    position: absolute;
+    margin-left:350px;
+    margin-top:400px;
+}
+
+._5{
+    color:crimson;
+    position: absolute;
+    margin-left:350px;
+    margin-top:500px;
+}
+
+._4{
+    color:crimson;
+    position: absolute;
+    margin-left:350px;
+    margin-top:600px;
+}
+
+._3{
+    color:crimson;
+    position: absolute;
+    margin-left:350px;
+    margin-top:700px;
+}
+
+._2{
+    color:crimson;
+    position: absolute;
+    margin-left:350px;
+    margin-top:800px;
+}
+
+._1{
+    color:crimson;
+    position: absolute;
+    margin-left:350px;
+    margin-top:900px;
+}
+
+body{
+    color:white;
+}
+
+h1{
+    font-weight: bold;
+}
+
+.nopadding{
+    padding-left:0px !important;
+    padding-right:0px !important;
+}
+
+#topnav{
+    height:78px;
+    background-color:crimson;
+}
+
+#seatdiv{
+    background-color:white;
+    height:800px;
+}
+
+.borderdiv{
+    border-radius: 5px;
+    color:black;
+    height: 80px;
+    border-style: solid;
+    border-color: black;
+}
+
+.warning{
+    background-color:white;
+}
+
+.row-of-seats{
+    height:100px;
+    margin-top:30px;
+}
+
+.innerdiv{
+    height:100%;
+    margin-top:3px;
+}
+
+.marg-top-xs{
+    margin-top:8px;
+}
+
+.marg-top-low{
+    margin-top:15px;
+}
+
+.marg-top{
+    margin-top:30px;
+}
+
+.marg-top-high{
+    margin-top:120px;
+}
+
+.glyphicon-ok:before{
+    font-size:400%;
+    color:limegreen;
+}
+
+.glyphicon-flag:before{
+    font-size:400%;
+    color:crimson;
+}
+
+.glyphicon-ban-circle:before{
+    font-size:460%;
+    color:gray;
+}
+
+.glyphicon-arrow-right:before{
+    font-size:460%;
+}
+
+.glyphicon-home:before{
+    font-size:400%;
+}
+
+.glyphicon-circle-arrow-up:before{
+    font-size:300%;
+}
+
+.glyphicon-chevron-left:before{
+    font-size:400%;
+}
+
+.glyphicon-chevron-right:before{
+    font-size:400%;
+}

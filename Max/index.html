@@ -1,20 +1,208 @@
 <!DOCTYPE HTML>
 <html>
-<head>
-        <title>Muller</title>
-        <meta charset="utf-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1">
-        <!--<link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='css/bootstrap-3.3.7-dist/css/bootstrap.css') }}" />
-        
-        -->
-        <link rel="stylesheet" href="//code.jquery.com/ui/1.12.1/themes/base/jquery-ui.css">
-        <script src="//ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
-        <script src="//netdna.bootstrapcdn.com/bootstrap/3.1.1/js/bootstrap.min.js"></script>
-        <link rel="stylesheet" type="text/css" href="//netdna.bootstrapcdn.com/bootstrap/3.1.1/css/bootstrap.min.css">
-        <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='css/style.css') }}" />
-        <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='css/'+cssfil) }}" />
-    </head>
+ <head>
+    <title>Tågvärdsapp</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+     <link rel="stylesheet" type="text/css" href="train.css">
+</head>
     <body>
-     
+     <div class="container-fluid">
+      <span class="glyphicon glyphicon-circle-arrow-up _9"></span>
+      <span class="glyphicon glyphicon-circle-arrow-up _8"></span>
+      <span class="glyphicon glyphicon-circle-arrow-up _7"></span>
+      <span class="glyphicon glyphicon-circle-arrow-up _6"></span>
+      <span class="glyphicon glyphicon-circle-arrow-up _5"></span>
+      <span class="glyphicon glyphicon-circle-arrow-up _4"></span>
+      <span class="glyphicon glyphicon-circle-arrow-up _3"></span>
+      <span class="glyphicon glyphicon-circle-arrow-up _2"></span>
+      <span class="glyphicon glyphicon-circle-arrow-up _1"></span>
+      <span class="glyphicon glyphicon-chevron-right left"></span>
+      <span class="glyphicon glyphicon-chevron-left right"></span>
+      <div class="row" id="topnav">
+       <div class="col-sm-2 marg-top-xs">
+        <span class="glyphicon glyphicon-home"></span>
+       </div>
+       <h1 class="col-sm-8 text-center nopadding">Carriage 1 (12)</h1>
+       <span class="glyphicon glyphicon-arrow-right col-sm-2 text-right"></span>
+      </div>
+      <div class="row nopadding" id="seatdiv">
+       <div class="row-of-seats col-sm-12 nopadding">
+           
+        <div class="col-sm-2 col-sm-offset-1 nopadding marg-top">
+         <div class="col-sm-11 col-sm-offset-1 borderdiv nopadding">
+          <div class="innerdiv col-sm-10 col-sm-offset-1 nopadding">
+           <span class="col-sm-12 glyphicon glyphicon-ok"></span>
+          </div>
+         </div>
+        </div>
+        <div class="col-sm-2 nopadding">
+         <div class="col-sm-11 col-sm-offset-1 borderdiv nopadding marg-top warning">
+          <div class="innerdiv col-sm-10 col-sm-offset-1 nopadding text-center second">
+           <span class="col-sm-12 glyphicon glyphicon-flag seconddel"></span>
+          </div>
+         </div>
+        </div>
+        <div class="col-sm-2 col-sm-offset-2 nopadding marg-top">
+         <div class="col-sm-11 col-sm-offset-1 borderdiv nopadding">
+          <div class="innerdiv col-sm-10 col-sm-offset-1 nopadding">
+           <span class="col-sm-12 glyphicon glyphicon-ban-circle"></span>
+          </div>
+         </div>
+        </div>
+        <div class="col-sm-2 nopadding marg-top">
+         <div class="col-sm-11 col-sm-offset-1 borderdiv nopadding">
+          <div class="innerdiv col-sm-10 col-sm-offset-1 nopadding">
+           <span class="col-sm-12 glyphicon glyphicon-ok"></span>
+          </div>
+         </div>
+        </div>
+        <div class="col-sm-2 col-sm-offset-1 nopadding marg-top">
+         <div class="col-sm-11 col-sm-offset-1 borderdiv nopadding">
+          <div class="innerdiv col-sm-10 col-sm-offset-1 nopadding">
+           <span class="col-sm-12 glyphicon glyphicon-ok"></span>
+          </div>
+         </div>
+        </div>
+        <div class="col-sm-2 nopadding marg-top">
+         <div class="col-sm-11 col-sm-offset-1 borderdiv nopadding">
+          <div class="innerdiv col-sm-10 col-sm-offset-1 nopadding">
+           <span class="col-sm-12 glyphicon glyphicon-ok"></span>
+          </div>
+         </div>
+        </div>
+        <div class="col-sm-2 col-sm-offset-2 nopadding marg-top">
+         <div class="col-sm-11 col-sm-offset-1 borderdiv nopadding">
+          <div class="innerdiv col-sm-10 col-sm-offset-1 nopadding">
+           <span class="col-sm-12 glyphicon glyphicon-ok"></span>
+          </div>
+         </div>
+        </div>
+        <div class="col-sm-2 nopadding marg-top">
+         <div class="col-sm-11 col-sm-offset-1 borderdiv nopadding">
+          <div class="innerdiv col-sm-10 col-sm-offset-1 nopadding">
+           <span class="col-sm-12 glyphicon glyphicon-ban-circle"></span>
+          </div>
+         </div>
+        </div>
+        <div class="col-sm-2 col-sm-offset-1 nopadding marg-top-high">
+         <div class="col-sm-11 col-sm-offset-1 borderdiv nopadding">
+          <div class="innerdiv col-sm-10 col-sm-offset-1 nopadding">
+           <span class="col-sm-12 glyphicon glyphicon-ok"></span>
+          </div>
+         </div>
+        </div>
+        <div class="col-sm-2 nopadding marg-top-high">
+         <div class="col-sm-11 col-sm-offset-1 borderdiv nopadding">
+          <div class="innerdiv col-sm-10 col-sm-offset-1 nopadding">
+           <span class="col-sm-12 glyphicon glyphicon-ok"></span>
+          </div>
+         </div>
+        </div>
+        <div class="col-sm-2 col-sm-offset-2 nopadding marg-top-high">
+         <div class="col-sm-11 col-sm-offset-1 borderdiv nopadding">
+          <div class="innerdiv col-sm-10 col-sm-offset-1 nopadding">
+           <span class="col-sm-12 glyphicon glyphicon-ok"></span>
+          </div>
+         </div>
+        </div>
+        <div class="col-sm-2 nopadding marg-top-high">
+         <div class="col-sm-11 col-sm-offset-1 borderdiv nopadding">
+          <div class="innerdiv col-sm-10 col-sm-offset-1 nopadding first">
+           <span class="col-sm-12 glyphicon glyphicon-flag firstdel"></span>
+          </div>
+         </div>
+        </div>
+        <div class="col-sm-2 col-sm-offset-1 nopadding marg-top">
+         <div class="col-sm-11 col-sm-offset-1 borderdiv nopadding">
+          <div class="innerdiv col-sm-10 col-sm-offset-1 nopadding">
+           <span class="col-sm-12 glyphicon glyphicon-ban-circle"></span>
+          </div>
+         </div>
+        </div>
+        <div class="col-sm-2 nopadding marg-top">
+         <div class="col-sm-11 col-sm-offset-1 borderdiv nopadding">
+          <div class="innerdiv col-sm-10 col-sm-offset-1 nopadding">
+           <span class="col-sm-12 glyphicon glyphicon-ban-circle"></span>
+          </div>
+         </div>
+        </div>
+        <div class="col-sm-2 col-sm-offset-2 nopadding marg-top">
+         <div class="col-sm-11 col-sm-offset-1 borderdiv nopadding">
+          <div class="innerdiv col-sm-10 col-sm-offset-1 nopadding">
+           <span class="col-sm-12 glyphicon glyphicon-ban-circle"></span>
+          </div>
+         </div>
+        </div>
+        <div class="col-sm-2 nopadding marg-top">
+         <div class="col-sm-11 col-sm-offset-1 borderdiv nopadding">
+          <div class="innerdiv col-sm-10 col-sm-offset-1 nopadding">
+           <span class="col-sm-12 glyphicon glyphicon-ban-circle"></span>
+          </div>
+         </div>
+        </div>
+        <div class="col-sm-2 col-sm-offset-1 nopadding marg-top">
+         <div class="col-sm-11 col-sm-offset-1 borderdiv nopadding">
+          <div class="innerdiv col-sm-10 col-sm-offset-1 nopadding">
+           <span class="col-sm-12 glyphicon glyphicon-ban-circle"></span>
+          </div>
+         </div>
+        </div>
+        <div class="col-sm-2 nopadding marg-top">
+         <div class="col-sm-11 col-sm-offset-1 borderdiv nopadding">
+          <div class="innerdiv col-sm-10 col-sm-offset-1 nopadding">
+           <span class="col-sm-12 glyphicon glyphicon-ban-circle"></span>
+          </div>
+         </div>
+        </div>
+        <div class="col-sm-2 col-sm-offset-2 nopadding marg-top">
+         <div class="col-sm-11 col-sm-offset-1 borderdiv nopadding">
+          <div class="innerdiv col-sm-10 col-sm-offset-1 nopadding">
+           <span class="col-sm-12 glyphicon glyphicon-ban-circle"></span>
+          </div>
+         </div>
+        </div>
+        <div class="col-sm-2 nopadding marg-top">
+         <div class="col-sm-11 col-sm-offset-1 borderdiv nopadding">
+          <div class="innerdiv col-sm-10 col-sm-offset-1 nopadding">
+           <span class="col-sm-12 glyphicon glyphicon-ok"></span>
+          </div>
+         </div>
+        </div>
+        <div class="col-sm-2 col-sm-offset-1 nopadding marg-top">
+         <div class="col-sm-11 col-sm-offset-1 borderdiv nopadding">
+          <div class="innerdiv col-sm-10 col-sm-offset-1 nopadding">
+           <span class="col-sm-12 glyphicon glyphicon-ok"></span>
+          </div>
+         </div>
+        </div>
+        <div class="col-sm-2 nopadding marg-top">
+         <div class="col-sm-11 col-sm-offset-1 borderdiv nopadding">
+          <div class="innerdiv col-sm-10 col-sm-offset-1 nopadding">
+           <span class="col-sm-12 glyphicon glyphicon-ok"></span>
+          </div>
+         </div>
+        </div>
+        <div class="col-sm-2 col-sm-offset-2 nopadding marg-top">
+         <div class="col-sm-11 col-sm-offset-1 borderdiv nopadding">
+          <div class="innerdiv col-sm-10 col-sm-offset-1 nopadding">
+           <span class="col-sm-12 glyphicon glyphicon-ok"></span>
+          </div>
+         </div>
+        </div>
+        <div class="col-sm-2 nopadding marg-top">
+         <div class="col-sm-11 col-sm-offset-1 borderdiv nopadding">
+          <div class="innerdiv col-sm-10 col-sm-offset-1 nopadding">
+           <span class="col-sm-12 glyphicon glyphicon-ok"></span>
+          </div>
+         </div>
+        </div>
+       </div>
+      </div>
+     </div>
+    <script src="maxscript.js"></script>
     </body>
 </html>
