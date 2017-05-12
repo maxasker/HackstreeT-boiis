@@ -188,9 +188,12 @@
 }
 
 /*Eat&Drink Map*/
-#map {
+#eatdrinkmap {
     margin-left: 12%;
-    height: 800px;
-    width: 583px;
-    background-image: url("restaurants.PNG");
+}
+
+.headeat {
+    font-family: 'Lobster', cursive;
+    font-weight: bold;
+    text-align: center;
 }
