@@ -10,7 +10,6 @@
         <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
         <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
         <link rel="stylesheet" href="trav.css">
-        <script src="script.js"></script>
     </head>
     <body>
         <nav class="navbar navbar-inverse">
@@ -37,12 +36,23 @@
     </div>
   </div>
 </nav>
-        <h3 class="headeat">Nearby attractions</h3>
-        <iframe id="eatdrinkmap"
-          width="600"
-          height="700"
-          frameborder="0" style="border:0"
-          src="https://www.google.com/maps/embed/v1/search?key=AIzaSyCgojCrToxowEPWiDxRYnRFbtKcr_dgTtg&q=tourist+attractions+central+London" allowfullscreen>
-        </iframe>
-    </body>
+ <div align="center">
+  <div id="maxcenter">
+  <h1>Travel planner</h1>
+  </div>
+  <div id="buttondiv" class="container">
+    <div class="form-group has-feedback">
+    <form class="form">
+     <label>From</label>
+     <input class="form-control" value="&nbsp &nbsp Current location" type="text">
+     <i class="glyphicon glyphicon-map-marker form-control-feedback"></i>
+     <label>To</label>
+     <input class="text-center form-control" value="Twickenham" type="text">
+     <button type="submit" class="maxbut btn btn-primary">Submit</button>
+    </form>
+  </div>
+  </div>
+ </div>
+ <script src="script.js"></script>
+</body>
 </html>

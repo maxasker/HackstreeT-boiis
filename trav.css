@@ -174,10 +174,30 @@
 .stop:first-child::before {
   display: none;
 }
-
+.maxbut{
+    margin-top:10px;
+}
 .active {
   background: crimson;
 }
+
+h1{
+    font-family: 'Lobster', cursive;
+    font-weight: bold;
+    text-align: center;
+}
+
+#maximg{
+    position:absolute;
+    width:768px;
+}
+
+#maximg2{
+    position:absolute;
+    width:768px;
+    margin-top:240px;
+}
+
 
 .active ~ .stop {
   background: lightgray;
